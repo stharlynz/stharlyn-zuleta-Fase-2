@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color:gray;
+    color: white;
+}
+
+#contenedor {
+    width: 960px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+header {
+    height: 150px;
+    background: white;
+    color: black;
+
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 150px;
+}
+
+nav {
+
+   background: orange;
+   height: 85px;
+} 
+
+#menu{
+    max-width: 1000px;
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+#menu ul{
+    list-style: none;
+    display: flex;
+
+}
+
+#menu a{
+    color: black;
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+background-color: aqua;}
+
+nav h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+}
+
+#contenido{
+    width: 960px;
+    height: 500px;
+    float: left;
+    background:black;
+    margin-top: 0px;
+    margin-right: 100px;
+   
+}
+
+#introd {
+    width: 960px;
+    height: 500px;
+    float: left;
+    background:black;
+    margin-top: 0px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    height: 600px;
+}
+
+#seled {
+    width: 960px;
+    height: 500px;
+    float: left;
+    background:black;
+    margin-top: 0px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    height: 2400px;
+}
+
+#acercaa {
+    width: 960px;
+    height: 500px;
+    float: left;
+    background:black;
+    margin-top: 0px;
+    margin-right: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    height: 400px;
+}
+
+#mockup{
+    width: 960px;
+    height: 500px;
+    float: left;
+    background:black;
+    margin-top: 0px;
+    margin-right: 100px;
+    text-align: center;
+    height: 1700px;
+}
+footer{
+    background: white;
+    clear: both;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    
+}

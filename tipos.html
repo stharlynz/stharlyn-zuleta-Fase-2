@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <center><h1>Fase 2 - Practicas Simuladas </h1></center>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="intro.html">Introduccion</a></li>
+                <li><a href="selector.html">Selecctor CSS </a></li>
+                <li><a href="mockup.html">Mockup</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+
+            </ul>
+            
+
+        </nav>
+        <section id="seled">
+            <article>
+                <BR>
+                </BR>
+                <h2>Tipos de selectores CSS</h2>
+                <BR>
+                </BR>
+                
+                    1. Selector universal.
+                    <BR>
+                    </BR>
+                    El asterisco (*) es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.
+                    Este selector puede utilizarse en combinación con espacios de nombres (namespace). @namespace es una regla que puedes emplear en documentos con muchos espacios de nombres, como HTML5, SVG en línea, MathML o XML. Al usar espacios de nombres definidos puedes restringir la selección de elementos que se encuentren dentro de ellos.
+                    Sintaxis del selector universal.
+                    <BR>
+                    Un selector universal puede tener cualquiera de las siguientes sintaxis:
+                    <BR>
+                    •	* o *|* { propiedades de estilo } - selecciona todos los elementos
+                    <BR>
+                    •	ns|* { propiedades de estilo } - selecciona todos los elementos en el espacio de nombre (ns)
+                    <BR>
+                    •	|* { propiedades de estilo } - selecciona todos los elementos sin algún espacio de nombre definido
+                    <BR>
+                    </BR>
+                    2. Selector de tipo.
+                    <BR>
+                    </BR>
+                    Un selector de tipo permite seleccionar todos los elementos en HTML que tienen un nombre de nodo común. Por ejemplo, al usar «a» el selector elegirá todos los elementos <a> y les aplicará el valor de la propiedad en CSS. «Input» seleccionará todos los elementos input, «span» todos los elementos span y así sucesivamente.
+                        <BR>
+                        Además, puedes usar espacios de nombre definidos para restringir las selecciones de los selectores de tipo a elementos que están dentro de este espacio.
+                        <BR>
+                        Sintaxis del selector de tipo
+                        <BR>
+                        La sintaxis del selector de tipo es muy sencilla. Únicamente deberás ingresar en tu código:
+                        <BR>
+                        •	elemento { propiedades de estilo }
+                        <BR>
+                        <BR>
+                        3. Selector de clase
+                        <BR>
+                        <BR>
+                    Los selectores de clase son herramientas que, como su nombre lo indica, permiten seleccionar todos los elementos que tienen un mismo nombre de clase. Por ejemplo, .intro te permitirá elegir todos los elementos que pertenecen a la clase «intro», así como .index escogerá todo elemento que tenga una clase «index».
+                    <BR>
+                    Si utilizas el framework Bootstrap CSS seguramente has notado que todos los estilos usan clases como selectores. Puedes encontrar la lista completa de clases de Bootstrap en W3Schools.
+                    <BR>
+                    Sintaxis del selector de clase
+                    <BR>
+                    La sintaxis del selector de clase es la siguiente:
+                    <BR>
+                    •	.nombre de clase { propiedades de estilo }
+                    <BR>
+                    <BR>        
+                    4. Selector de ID
+                    <BR>
+                    <BR>
+                    Un selector de ID está diseñado para seleccionar elementos con base en su atributo de ID. Por ejemplo, #toc seleccionará todos los elementos que tengas como ID «toc». Ten en cuenta que este selector solo funcionará cuando el valor dado en el selector es idéntico al del ID del atributo que quieres referir.
+                    <BR>
+                    Sintaxis del selector de ID
+                    <BR>
+                    La sintaxis del selector de ID funciona del siguiente modo:
+                    <BR>
+                    •	#nombre de ID { propiedades de estilo }
+                    <BR>
+                    <BR>
+                    5. Selector de atributo
+                    <BR>
+                    <BR>
+                    Los selectores de atributo están hechos para seleccionar todos los elementos que correspondan a un atributo específico o a un valor de atributo definido. Por ejemplo, a[href] elegirá todos los enlaces, mientras que a[href*="hubspot"] únicamente escogerá todas las URL que contengan la palabra «hubspot».
+                    <BR>
+                    Puedes utilizar este tipo de selector para aplicar reglas de CSS a elementos que tienen un valor de atributo, por lo que si quieres modificar el estilo de todos los elementos que contengan «hubspot» en su URL, deberás utilizar a[href*="hubspot"].
+                    <BR>
+                    Por otro lado, también puedes utilizar un espacio de nombre en combinación con este selector para restringir la búsqueda a elementos dentro de ese espacio.
+                    <BR>
+                    Sintaxis del selector de atributo
+                    <BR>
+                    Algunas de las sintaxis disponibles para el selector de atributo son las siguientes:
+                    <BR>
+                    •	[attr] { propiedades de estilo }
+                    <BR>
+                    •	[attr=value] { propiedades de estilo }
+                    <BR>
+                    •	[attr~=value] { propiedades de estilo }
+                    <BR>
+                    •	[attr|=value] { propiedades de estilo }
+                    <BR>
+                    •	[attr^=value] { propiedades de estilo }
+                    <BR>
+                    •	[attr$=value] { propiedades de estilo }
+                    <BR>
+                    •	[attr*=value] { propiedades de estilo }
+                    <BR>
+                    La elección de una de estas sintaxis dependerá de si los elementos que quieres seleccionar tienen atributos que han sido ajustados a un valor específico.
+                    <BR>
+                    <BR>
+                    6. Selector de pseudo-clase
+                    <BR>
+                    <BR>
+                    Un selector de pseudo-clase permite aplicar CSS a una selección de elementos o a elementos que se encuentran en un estado específico. Por ejemplo, :hover hará que únicamente se modifique el estilo de un elemento cuando el usuario se desplace sobre él. Otros ejemplos comunes son :active, :visited o :invalid.
+                    <BR>
+                    Sintaxis del selector de pseudo-clase
+                    <BR>
+                    La sintaxis del selector de pseudo clase es:
+                    <BR>
+                    •	selector:puedo-clase { propiedades de estilo }
+ 
+
+                           
+            </article>
+            
+        
+        </section>
+        <footer>
+            Derechos Reservados &copy; 2023 <br>
+            Diseñado por: Stharlyn Zuleta Arboleda <br>
+            Email: szuletaa@unad.edu.co <br>
+            www.StharlynFase2.com
+        </footer>
+    </div>
+</body>
+</html>
